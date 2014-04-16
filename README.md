@@ -19,7 +19,7 @@ Just double-click the downloaded files and follow the instructions.
 1) Open Rstudio
 2) Enter the following command - without outer quotes - in the Rstudio console (bottom left window):
 
-* "install.packages("ggplot2")"
+* install.packages(c("ggplot2", "scales", "maps", "ggthemes"))
 * click enter
 
 You're all set!!
