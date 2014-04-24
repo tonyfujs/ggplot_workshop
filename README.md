@@ -10,10 +10,10 @@
 * Download Rstudio from the following link: [https://www.rstudio.com/ide/download/desktop](https://www.rstudio.com/ide/download/desktop) (RStudio 0.98.501 - Mac OS X 10.6+ (64-bit))
 
 
-### STEP 2: Install R & Rstudio
+## STEP 2: Install R & Rstudio
 Just double-click the downloaded files and follow the instructions.
 
-### STEP 3: Install a few packages
+## STEP 3: Install a few packages
 1) Open Rstudio
 2) Enter the following command line in the Rstudio console (bottom left window):
 
