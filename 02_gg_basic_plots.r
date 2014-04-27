@@ -8,14 +8,12 @@ library(scales)
 ### Load data
 load('./data/data.Rdata')
 
-
 ### Scatter Plot ###----
 # population vs stores
 ggplot(
   aes(x = XXXX, y = XXXX), # Replace the XXXX
   data = summary2005) +
   geom_point()
-
 
 ## Scatter Plot + regression line ###----
 # Hint: Use the cheat sheet to find the right geom
@@ -33,50 +31,6 @@ ggplot(
   data = summary2005) +
   geom_point()
 
-
-### Histogram ###----
-# Histogram of population
-# Hint: Use the cheat sheet to find the right geom
-ggplot(
-  aes(x = population),
-  data = summary2005) +
-  geom_XXXX() # Replace the XXXX
-
-
-### Dotplot ###----
-# Dotplot of population
-ggplot(
-  aes(x = population),
-  data = summary2005) +
-  geom_dotplot() # Replace the XXXX
-
-### Density plot ###----
-# Density plot of population
-ggplot(
-  aes(x = population),
-  data = summary2005) +
-  geom_XXXX() # Replace the XXXX
-
-
-### Histogram + Density plot ###----
-# Histogram + Density on the same plot
-ggplot(
-  aes(x = population,
-      y = ..density..),
-  data = summary2005) +
-  XXXX # Replace the XXXX
-
-
-### Histogram + Density plot (RED) ###----
-# Edit code to make the color of the density curve to RED
-ggplot(
-  aes(x = population,
-      y = ..density..),
-  data = summary2005) +
-  geom_histogram() +
-  geom_density(XXXX) # Replace the XXXX
-
-
 ### Bar chart - Unordered ###----
 ggplot(
   aes(x = state,
@@ -84,14 +38,12 @@ ggplot(
   data = summary2005) +
   geom_bar(stat = 'identity')
 
-
 ### Bar chart - ordered ###----
 ggplot(
   aes(x = reorder(state, population),
       y = population),
   data = summary2005) +
   geom_bar(stat = 'identity')
-
 
 ### Bar chart - ordered & flipped ###----
 # Edit code to flip this bar chart (States will show vertically)
@@ -103,10 +55,9 @@ ggplot(
   geom_bar(stat = 'identity') +
   coord_XXXX() # Replace the XXXX
 
-
 ### Stacked Bar chart ###----
 # Edit the code so each bar represents the total population of the US for each year
-# 1) What does the curretn number represent
+# 1) What does the current number represent
 # 2) Why did happen here? (Think about part 1 of the workshop)
 # 3) Which aspect of the grammar of graphics is incorrectly defined?
 ggplot(
@@ -117,7 +68,6 @@ ggplot(
            position = 'identity') +
   scale_y_continuous(labels = comma)
  
-
 # Objective:
 # Visualize increase of stores over time, by state
 ### Line chart - iteration 1 ###----
@@ -128,7 +78,6 @@ ggplot(
   data = summary) +
   geom_line()
 
-
 ### Line chart - iteration 2 ###----
 # Edit code to change lines color depending on state
 ggplot(
@@ -137,7 +86,6 @@ ggplot(
       group = state),
   data = summary) +
   geom_line()
-
 
 ### Line chart - iteration 3 ###----
 # Edit the code to produce the following small multiple
